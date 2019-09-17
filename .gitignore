@@ -4,6 +4,9 @@
 .DS_Store
 .cache
 .pytest_cache/
+.vscode/
+videos/
+venv/
 
 # Setuptools distribution and build folders.
 /dist/
