@@ -1,7 +1,6 @@
 import gym, math, time
 from gym import wrappers
 import numpy as np
-import pyglet
 
 class QLearn():
   def __init__(self, observation_space, action_space):
@@ -42,7 +41,6 @@ class QLearn():
     value_new_state = np.max(self.Q[new_state])
     alpha = max(self.min_alpha, min(
         1.0, 1.0 - math.log10((episode + 1) / 25)))
-    print(alpha)
     self.Q[state][action] = self.Q[state][action] + \
       alpha * (reward + self.gamma * value_new_state - self.Q[state][action])
 
