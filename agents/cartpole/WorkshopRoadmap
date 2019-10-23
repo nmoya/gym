@@ -1,0 +1,36 @@
+Workshop roadmap:
+
+1) Play around with keyboard agent and cartpole
+2) Create a cartpole function
+3) Write basic OpenGym Loop
+4) Play around with the actions (all to the left, all to the right)
+
+Checkpoint
+
+1) Write the agent class with methods without implementation (decide and update)
+2) Explain about discretization:
+    - states_per_obs
+    - def normalize(self, value, lower_bound, upper_bound):
+    - def linear_transform(self, value, max_value):
+    - def discretize(self, obs):
+3) Create the Q table
+
+Checkpoint
+
+1) Implement update function
+2) Implement decide function
+3) Implement past_rewards deque
+4) Test and show that it does not work
+
+Checkpoint
+
+1) Implement alpha_fn
+2) Implement exploration decay
+3) Add to print so we can see the values changing
+
+Checkpoint
+
+Discuss future improvements:
+    - Pass gamma / alpha as parameter so we can do multiple
+        runs to find constant values
+    - Go back to the slides
